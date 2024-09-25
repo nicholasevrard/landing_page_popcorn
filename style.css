@@ -1,0 +1,210 @@
+/* Barre de navigation */
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#nav .logo {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+#nav ul li {
+    display: inline;
+}
+
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 8px 16px;
+}
+
+#nav ul li a:hover {
+    background-color: #ff9800;
+    border-radius: 5px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    padding-top: 300px;
+    background-image: url('https://img.freepik.com/free-photo/box-popcorn-sits-table-front-brown-leather-couch_1340-33321.jpg?t=st=1727243457~exp=1727247057~hmac=831c3ba6b18c8b909cca22aff19e8e599516fa83efb08261984aa4ccd2df6615&w=740');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.cta-buttons a {
+    padding: 15px 30px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Section Pourquoi Choisir Notre Popcorn */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.section-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.section-icons div {
+    width: 150px;
+}
+
+.section-icons span {
+    font-size: 3em;
+    color: #ff9800;
+}
+
+.section-icons p {
+    font-size: 1.1em;
+    margin-top: 10px;
+}
+
+/* Saveurs */
+.saveurs {
+    display: flex;
+    gap: 20px;
+    overflow: scroll;
+}
+
+.saveur-card {
+    width: 300px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.saveur-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.saveur-card h3 {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.saveur-card p {
+    padding: 0 20px;
+}
+
+.saveur-card a {
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Témoignages */
+.testimonials {
+    background-color: #fff3e0;
+    padding: 60px 20px;
+}
+
+.testimonials-container {
+    display: flex;
+    gap: 20px;
+}
+
+.testimonial {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.testimonial p {
+    font-size: 1.1em;
+}
+
+.testimonial span {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer a {
+    color: #ff9800;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social i {
+    font-size: 1.5em;
+    margin: 0 10px;
+}
