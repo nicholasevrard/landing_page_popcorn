@@ -14,7 +14,7 @@ pipeline {
             steps {
                 sh '''
                 sonar-scanner \
-                  -Dsonar.projectKey=popcorn \
+                  -Dsonar.projectKey=landing_page_popcorn \
                   -Dsonar.sources=. \
                   -Dsonar.host.url=http://192.168.1.6:9000 \
                   -Dsonar.token=sqp_8c5f135a2780788937f3cbb8fae51f01a9216c70
