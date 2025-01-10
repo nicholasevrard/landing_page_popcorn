@@ -1,0 +1,25 @@
+pipeline {
+    agent {
+        label 'jenkins-agent'
+    }
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git branch: 'main', url: 'https://github.com/nicholasevrard/landing_page_popcorn'
+            }
+        }
+
+        stage('Code Quality Analysis') {
+            steps {
+                sh '''
+                sonar-scanner \
+                  -Dsonar.projectKey=popcorn \
+                  -Dsonar.sources=. \
+                  -Dsonar.host.url=http://192.168.1.6:9000 \
+                  -Dsonar.token=ssqp_e645f90dd130f345313233ddea1943c8df899cce
+                '''
+            }
+        }
+    }
+}
